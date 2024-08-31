@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secure Password Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Secure Password Manager</h1>
+        <div id="setup-section">
+            <input type="password" id="new-master-password" placeholder="Create master password">
+            <input type="password" id="confirm-master-password" placeholder="Confirm master password">
+            <button id="create-master-password">Create Master Password</button>
+        </div>
+        <div id="login-section" style="display: none;">
+            <input type="password" id="master-password" placeholder="Enter master password">
+            <button id="login-button">Login</button>
+        </div>
+        <div id="main-section" style="display: none;">
+            <div id="password-list"></div>
+            <button id="add-password">Add Password</button>
+            <button id="generate-password">Generate Password</button>
+            <input type="text" id="generated-password" readonly>
+            <button id="view-raw-data">View Raw Data</button>
+            <button id="logout">Logout</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
